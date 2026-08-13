@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ModelArts Dataset Manifest Downloader</title><link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main class="app">
+<header class="header"><div class="brand"><img src="icons/icon32.svg" class="brand-icon"><div><h1>ModelArts Manifest Downloader</h1><p>Dataset <code>data.manifest</code></p></div></div><button id="refreshButton" class="icon-button" title="Refresh">↻</button></header>
+<section class="status-card"><span id="statusDot" class="status-dot"></span><span id="statusText">Checking ModelArts session…</span></section>
+<section class="form">
+<label><span>Project / Region</span><select id="projectSelect" disabled></select></label>
+<label><span>Workspace</span><select id="workspaceSelect" disabled></select></label>
+<label><span>Dataset</span><select id="datasetSelect" disabled></select></label>
+<div id="datasetInfo" class="dataset-info hidden"></div>
+<button id="downloadButton" class="download-button" disabled>↓&nbsp; Download data.manifest</button>
+</section>
+<details class="advanced"><summary>Show IDs</summary><dl><dt>Project ID</dt><dd id="projectIdValue">—</dd><dt>Workspace ID</dt><dd id="workspaceIdValue">—</dd><dt>Dataset ID</dt><dd id="datasetIdValue">—</dd></dl></details>
+<footer>V0.1.0 • Uses your existing ModelArts login session</footer>
+</main><script src="popup.js"></script>
+</body></html>

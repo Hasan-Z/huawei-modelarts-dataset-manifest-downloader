@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "ModelArts Dataset Manifest Downloader",
+  "version": "0.1.0",
+  "description": "Discover ModelArts projects, workspaces, and datasets from the current logged-in session and download data.manifest.",
+  "permissions": [],
+  "host_permissions": ["https://console-intl.huaweicloud.com/*"],
+  "action": {
+    "default_title": "ModelArts Dataset Manifest Downloader",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/icon16.svg",
+    "32": "icons/icon32.svg",
+    "48": "icons/icon48.svg",
+    "128": "icons/icon128.svg"
+  }
+}
